@@ -13,8 +13,8 @@ const BotSpecs = ({ bot, goBack, enlistBot }) => {
       <p>Armor: {armor}</p>
       <p>Class: {bot_class}</p>
       <p className="catchphrase">{catchphrase}</p>
-      <button onClick={goBack}>Back to List</button>
-      <button onClick={() => enlistBot(bot.id)}>Enlist</button>
+      <button className="button-86"onClick={goBack}>Back to List</button>
+      <button className="button-78"onClick={() => enlistBot(bot.id)}>Enlist</button>
     </div>
   );
 };
