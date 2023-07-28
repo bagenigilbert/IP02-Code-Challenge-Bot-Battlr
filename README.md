@@ -2,8 +2,8 @@
 
 ## OWNER
 <div style="display: flex; justify-content: space-between;">
-  <img src="./images/IMG_20230205_111726_457~2_1.jpg" alt="Bot Battlr" width="150">
-  <img src="./images/IMG_20230525_074346_888.jpg" alt="Bot Battlr" width="150">
+  <img src="./images/IMG_20230205_111726_457~2_1.jpg" alt="Bot Battlr" width="200">
+  <img src="./images/IMG_20230525_074346_888.jpg" alt="Bot Battlr" width="200">
 </div>
 
 
