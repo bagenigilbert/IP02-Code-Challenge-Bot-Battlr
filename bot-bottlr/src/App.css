@@ -1,38 +1,127 @@
-.App {
+/* Reset some default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #22a9cb;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* BotCollection and MyBotArmy Styles */
+.bot-collection,
+.your-bot-army {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #d38508;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.bot-collection h2,
+.your-bot-army h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bot-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #740086;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bot-card h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.bot-card p {
+  margin-bottom: 5px;
+}
+
+.bot-card button {
+  padding: 8px 16px;
+  background-color: #0a0183;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.bot-card button:hover {
+  background-color: #00a19e;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bot-collection,
+  .your-bot-army {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
+bot-card button {
+  /* ... Other styles ... */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bot-card button:hover {
+  background-color: #a10925;
+  color: #ffffff;
+}
+
+/* Add animation for catchphrase change */
+.bot-card .catchphrase {
+  font-size: 16px;
+  text-align: center;
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
   }
 }
