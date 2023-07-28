@@ -1,6 +1,10 @@
-import './App.css';
 import React, { useState, useEffect} from 'react';
-function App() {
+import BotCollection from './components/BotCollection';
+import MyBotArmy from './components/MyBotArmy';
+import './App.css';
+const App=()=>{
+  const [bots, setBots]=useState([]);
+  
   return (
     <div className="App">
     </div>

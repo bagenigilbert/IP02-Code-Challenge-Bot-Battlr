@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./BotCollection.css"; // Import the CSS file
 
 const BotCollection =()=>{
   const[bots , setBots] = useState([]);
