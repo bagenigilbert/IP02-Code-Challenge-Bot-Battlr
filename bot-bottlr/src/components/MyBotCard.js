@@ -8,6 +8,9 @@ const MyBotCard=({bot, actionLabel, actionHandler})=>{
             <h3>{name}</h3>
             <p>Health: {health}</p>
             <p>Damage: {damage}</p>
+            <p>Armor: {armor}</p>
+            <p>Armor: {armor}</p>
+
 
 
 
