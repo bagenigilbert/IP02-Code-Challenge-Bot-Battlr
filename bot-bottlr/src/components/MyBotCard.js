@@ -7,6 +7,8 @@ const MyBotCard=({bot, actionLabel, actionHandler})=>{
             <img src="{avatar_url}" alt="{name}" />
             <h3>{name}</h3>
             <p>Health: {health}</p>
+            <p>Damage: {damage}</p>
+
 
 
         </div>
