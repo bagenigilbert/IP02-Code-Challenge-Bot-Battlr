@@ -1,11 +1,11 @@
-// import React from "react";
-// const MyBotCard=({bot, actionLabel, actionHandler})=>{
-//     return(
-//         <div className="bot-card">
-//             <img src="{avatar_url}" />
+import React from "react";
+const MyBotCard=({bot, actionLabel, actionHandler})=>{
+    return(
+        <div className="bot-card">
+            <img src="{avatar_url}" />
 
-//         </div>
-//     )
+        </div>
+    )
 
-// }
-// export default MyBotCard;
+}
+export default MyBotCard;
