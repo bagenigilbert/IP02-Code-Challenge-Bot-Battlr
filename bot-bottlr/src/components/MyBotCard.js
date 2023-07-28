@@ -10,6 +10,8 @@ const MyBotCard=({bot, actionLabel, actionHandler})=>{
             <p>Damage: {damage}</p>
             <p>Armor: {armor}</p>
             <p>Armor: {armor}</p>
+            <p>Class: {bot_class}</p>
+
 
 
 
