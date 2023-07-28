@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const BotCollection =()=>{
-  const[bots , setBots] = useEffect([]);
+  const[bots , setBots] = useState([]);
 
   useEffect(()=>{
     fetch('http://localhost:8001/bots')
