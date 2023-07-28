@@ -13,12 +13,25 @@ const App=()=>{
       .then((data) => setBots(data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
-const enlistBot =(botId)=>{
+ const enlistBot =(botId)=>{
    // Find the selected bot by id from the 'bots' array
-   const selectedBot = bots.find((bot)=>botId ===botId)
-}
+   const selectedBot = bots.find((bot)=>bot.id ===botId)
+      // Check if the bot is already enlisted
+      if(!MyBotArmy.some((bot)=>bot.id ===botId)){
+        setMyBotArmy([...MyBotArmy,selectedBot]);
+       }
+      };
+      const dischargeBot = (botId)=>{
+        const updatedBotArmy =MyBotArmy.filter((bot)=>bot.id !==botId);
+        setMyBotArmy(updatedBotArmy)
+      }
   return (
     <div className="App">
+      <h1>Bot Battlr</h1>
+      <div className='container'>
+        <BotCollection bots={bots} enlistBot={enlistBot}/>
+        <MyBotArmy  bots={MyBotArmy} dischargeBot={dischargeBot}/>
+      </div>
     </div>
   );
 }
