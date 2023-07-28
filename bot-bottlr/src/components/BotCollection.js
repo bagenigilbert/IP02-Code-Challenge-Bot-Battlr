@@ -6,6 +6,7 @@ const BotCollection =()=>{
   useEffect(()=>{
     fetch('http://localhost:8001/bots')
     .then((res)=>res.json())
-    .then((data)=>setBots)
+    .then((data)=>setBots(data))
+    .catch((error)=>console.error('Error fetching data',error));
   })
 }
