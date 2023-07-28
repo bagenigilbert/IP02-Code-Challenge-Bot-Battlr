@@ -1,0 +1,49 @@
+/* Overall container for the bot cards */
+.bot-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual bot card */
+  .bot-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bot-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .bot-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .bot-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .bot-card .catchphrase {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .bot-card .created-at,
+  .bot-card .updated-at {
+    font-size: 14px;
+    color: #999;
+  }

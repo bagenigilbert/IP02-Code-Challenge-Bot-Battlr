@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import "./BotCollection.css"; // Import the CSS file
 
 const BotCollection =()=>{
   const[bots , setBots] = useState([]);
-
+  const [enlistedBots, setEnlistedBots]=useState([])
   useEffect(()=>{
     fetch('http://localhost:8001/bots')
     .then((res)=>res.json())
@@ -14,9 +15,8 @@ const BotCollection =()=>{
     <div>
         {bots.map((bot)=>(
             <div key={bot.id} className="bot-card">
-                <img src={bot.avater_url} alt={`Avater of ${bot.name}`} />
+                <img src={bot.avatar_url} alt={`Avater of ${bot.name}`} />
                 <h3>{bot.name}</h3>
-                <p>Id:{bot.id}</p>
                 <p>Health:{bot.health}</p>
                 <p>Damage:{bot.damage}</p>
                 <p>Armor:{bot.armor}</p>
