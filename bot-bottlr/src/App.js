@@ -13,7 +13,10 @@ const App=()=>{
       .then((data) => setBots(data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
-
+const enlistBot =(botId)=>{
+   // Find the selected bot by id from the 'bots' array
+   const selectedBot = bots.find((bot)=>botId ===botId)
+}
   return (
     <div className="App">
     </div>
