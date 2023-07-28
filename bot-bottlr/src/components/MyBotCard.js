@@ -12,6 +12,8 @@ const MyBotCard=({bot, actionLabel, actionHandler})=>{
             <p>Armor: {armor}</p>
             <p>Class: {bot_class}</p>
             <p>Catchphrase: {catchphrase}</p>
+            <button onClick={actionHandler}>{actionLabel}</button>
+
 
 
 
