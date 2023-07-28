@@ -8,5 +8,12 @@ const BotCollection =()=>{
     .then((res)=>res.json())
     .then((data)=>setBots(data))
     .catch((error)=>console.error('Error fetching data',error));
-  })
+  }, [])
+
+  return (
+    <div>
+        {}
+    </div>
+  )
 }
+export default BotCollection;
