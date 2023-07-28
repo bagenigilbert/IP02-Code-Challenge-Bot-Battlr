@@ -12,7 +12,20 @@ const BotCollection =()=>{
 
   return (
     <div>
-        {}
+        {bots.map((bot)=>(
+            <div key={bot.id} className="bot-card">
+                <img src={bot.avater_url} alt={`Avater of ${bot.name}`} />
+                <h3>{bot.name}</h3>
+                <p>Id:{bot.id}</p>
+                <p>Health:{bot.health}</p>
+                <p>Damage:{bot.damage}</p>
+                <p>Armor:{bot.armor}</p>
+                <p>Class:{bot.bot_class}</p>
+                <p>Catchphrase:{bot.catchphrase}</p>
+                <p>Created at:{bot.created_at}</p>
+                <p>Update at{bot.updated_at}</p>
+            </div>
+        ))}
     </div>
   )
 }
