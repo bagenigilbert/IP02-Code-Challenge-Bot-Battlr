@@ -3,14 +3,12 @@ import "./BotCollection.css"; // Import the CSS file
 
 const BotCollection =()=>{
   const[bots , setBots] = useState([]);
-  const [enlistedBots, setEnlistedBots]=useState([])
   useEffect(()=>{
     fetch('http://localhost:8001/bots')
     .then((res)=>res.json())
     .then((data)=>setBots(data))
     .catch((error)=>console.error('Error fetching data',error));
   }, [])
-
   return (
     <div>
         {bots.map((bot)=>(
