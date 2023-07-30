@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import BotCollection from './components/BotCollection';
 import MyBotArmy from './components/MyBotArmy';
 import './App.css';
+import AddBotForm from './components/AddBotForm';
 
 const App = () => {
     // Define state variables 'bots' and 'myBotArmy' using useState hooks
@@ -32,6 +33,13 @@ const App = () => {
       localStorage.setItem('botArmy', JSON.stringify(updatedBotArmy));
     }
   };
+
+  const addBot = (newBot) => {
+    // Generate a unique ID for the new bot (you can use any method, like uuid)
+    newBot.id = Date.now();
+    // Update the bots state with the new bot added
+    setBots([...bots, newBot]);
+  };
   // The 'dischargeBot' action removes the robot from your team if you click on it again.
   const dischargeBot = (botId) => {
         // We look at all the robots in your team and filter out the one you clicked on using its 'id'.
@@ -52,6 +60,8 @@ const App = () => {
         {/* The 'MyBotArmy' box shows the robots you picked for my team. When you click on a robot here, it gets discharged. */}
         <BotCollection bots={bots} enlistBot={enlistBot} />
         <MyBotArmy bots={myBotArmy} dischargeBot={dischargeBot} />
+        <AddBotForm addBot={addBot} />
+
       </div>
     </div>
   );

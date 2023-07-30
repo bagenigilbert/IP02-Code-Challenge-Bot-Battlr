@@ -348,6 +348,56 @@ h2 {
   z-index: -99999;
   transition: all .4s;
 }
+/* CSS for AddBotForm */
+.add-bot-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f19d01;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.add-bot-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-bot-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-bot-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.add-bot-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.add-bot-form button {
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+
+/* AddBotForm Responsive styles */
+@media screen and (max-width: 600px) {
+  .add-bot-form {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
 
 .button-86::before {
   transform: translate(0%, 0%);
