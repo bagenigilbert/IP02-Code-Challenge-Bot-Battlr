@@ -10,7 +10,7 @@ const App = () => {
   const [myBotArmy, setMyBotArmy] = useState([]);
   // Use the useEffect hook to fetch data from the server and set it in the state when the component mounts
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://template-1-0s60.onrender.com/bots')
       .then((response) => response.json())
       .then((data) => setBots(data))
       .catch((error) => console.error('Error fetching data:', error));
