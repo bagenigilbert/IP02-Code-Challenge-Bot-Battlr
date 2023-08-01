@@ -1,101 +1,70 @@
-# IP02-Code-Challenge-Bot-Battlr
+# Getting Started with Create React App
 
-## OWNER
-<div style="display: flex; justify-content: space-between;">
-  <img src="./images/IMG_20230205_111726_457~2_1.jpg" alt="Bot Battlr" width="200">
-  <img src="./images/IMG_20230525_074346_888.jpg" alt="Bot Battlr" width="200">
-</div>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## Bot Battlr App
+In the project directory, you can run:
 
-Welcome to Bot Battlr, a web application where you can explore various bots, enlist them to build your ultimate bot army, and engage in thrilling battles!
+### `npm start`
 
-## Table of Contents
-Introduction
-Features
-Technologies Used
-Getting Started
-Installation
-Usage
-Screenshots
-Contributing
-Author
-Contact
-License
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Introduction
-Bot Battlr is a fun and interactive web app that allows users to discover a wide range of bots with unique characteristics. Users can view bot details, such as health, damage, armor, and class, and even get entertained by their catchy catchphrases. The main highlight of the app is the ability to enlist bots to form your very own bot army. Enlist wisely, as each bot brings different strengths to your team.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Once you have assembled your bot army, you can take them into battles against other users' bot armies. The bot with the highest damage and strategic moves will emerge victorious. Can you build the most powerful bot army and conquer all your opponents?
+### `npm test`
 
-## Features
-Browse and explore various bots with captivating characteristics.
-Enlist bots into your bot army to create a formidable team.
-Battle your bot army against other users' bot armies.
-Engage in thrilling and strategic bot battles to prove your supremacy.
-Catchy catchphrases to entertain you while browsing bots.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Technologies Used
-Front-end:
-React.js for building the user interface.
-CSS for styling the components.
-Axios for making HTTP requests to the server.
-Customized buttons with animations using CSS.
-Back-end (Not mentioned in the code snippet, but assumed to be part of the app):
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Node.js and Express.js for server-side development.
-Database (e.g., MongoDB) for storing bot data and user information.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Getting Started
-To run the Bot Battlr app locally, follow the steps below:
+### `npm run eject`
 
-## Installation
-Clone the repository from GitHub:
-bash
-Copy code
-git clone https://github.com/gilbert-bageni/bot-battlr.git
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Navigate to the project directory:
-bash
-Copy code
-cd bot-battlr
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Install the required dependencies:
-Copy code
-npm install
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Usage
-Start the development server:
-sql
-Copy code
-npm start
-Open your web browser and go to http://localhost:3000 to access the Bot Battlr app.
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Screenshots
-Here are some screenshots of the Bot Battlr app:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Bot Collection
+### Code Splitting
 
-Bot Specs
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-My Bot Army
+### Analyzing the Bundle Size
 
-## Contributing
-Contributions to Bot Battlr are welcome! If you find any bugs or have ideas for new features, feel free to open an issue or submit a pull request.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Author
-Bot Battlr is created and maintained by Gilbert Bageni.
+### Making a Progressive Web App
 
-## Contact
-For any inquiries or suggestions regarding Bot Battlr, you can reach me at:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Email: gilbertwilber0@gmail.com
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute this code as per the terms of the license. Happy bot battlr-ing! 🤖🔥
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
